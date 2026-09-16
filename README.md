@@ -32,21 +32,22 @@ mosquitto/
 
 #### 4️⃣ **รันคำสั่ง Docker**
 ```bash
-docker run -d \
-  --name mosquitto \
-  -p 1883:1883 \
-  -v /path/to/mosquitto:/mosquitto/config \
-  -v /path/to/password:/mosquitto/passwd \
-  eclipse-mosquitto:latest
+docker run -d `
+  --name mosquitto `
+  -p 1883:1883 `
+  -v /path/to/mosquitto:/mosquitto/config/mosquitto.conf `
+  -v /path/to/acl.conf:/mosquitto/config/acl.conf `
+  -v /path/to/password:/mosquitto/config/passwd `
+  eclipse-mosquitto
 ```
 
 #### 5️⃣ **สร้างไฟล์รหัสผ่านสำหรับผู้ใช้**
 ```bash
-# สร้างไฟล์รหัสผ่าน
-docker exec mosquitto mosquitto_passwd /mosquitto/passwd device_001
+# สร้างผู้ใช้
+docker exec -it mqtt-broker mosquitto_passwd /mosquitto/config/password.txt device_001
 
 # เพิ่มผู้ใช้เพิ่มเติม
-docker exec mosquitto mosquitto_passwd /mosquitto/passwd admin_server
+docker exec -it mqtt-broker mosquitto_passwd /mosquitto/config/password.txt admin_server
 ```
 
 ### ✅ ผลลัพธ์หลังการติดตั้ง
