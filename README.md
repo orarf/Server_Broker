@@ -190,9 +190,9 @@ docker stop mosquitto
 docker start mosquitto
 ```
 ## ไฟล์สรุปเพิ่มเติม
-```
+
 [📥 ดาวน์โหลด Mosquitto MQTT Broker Guide](./Mosquitto_MQTT_Broker_Guide%20-%20Repaired.pptx?raw=true)
-```
+
 ---
 
 **Created:** 2026  
