@@ -191,7 +191,10 @@ docker start mosquitto
 ```
 
 ---
+## ไฟล์สรุปเพิ่มเติม
+
+[📥 คลิกที่นี่เพื่อดาวน์โหลด Mosquitto MQTT Broker Guide](<https://github.com/orarf/Server_Broker/raw/refs/heads/main/Mosquitto_MQTT_Broker_Guide-Repaired.pptx>)
+---
 
 **Created:** 2024  
 **Status:** Ready for Production ✅
-[📥 คลิกที่นี่เพื่อดาวน์โหลด Mosquitto MQTT Broker Guide](<https://github.com/orarf/Server_Broker/raw/refs/heads/main/Mosquitto_MQTT_Broker_Guide-Repaired.pptx>)
