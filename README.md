@@ -15,7 +15,7 @@
 mosquitto/
 ├── mosquitto.conf
 ├── acl.conf
-└── password_file
+└── password.txt
 ```
 
 #### 2️⃣ **สร้างไฟล์ตั้งค่า (mosquitto.conf)**
@@ -43,7 +43,7 @@ docker run -d \
 #### 5️⃣ **สร้างไฟล์รหัสผ่านสำหรับผู้ใช้**
 ```bash
 # สร้างไฟล์รหัสผ่าน
-docker exec mosquitto mosquitto_passwd -c /mosquitto/passwd device_001
+docker exec mosquitto mosquitto_passwd /mosquitto/passwd device_001
 
 # เพิ่มผู้ใช้เพิ่มเติม
 docker exec mosquitto mosquitto_passwd /mosquitto/passwd admin_server
